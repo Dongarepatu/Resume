@@ -217,12 +217,63 @@
         }
 
         @media (max-width: 768px) {
+            header {
+                padding: 40px 15px;
+            }
+
             header h1 {
-                font-size: 2em;
+                font-size: 1.8em;
+            }
+
+            header p {
+                font-size: 1em;
+            }
+
+            .profile-img {
+                width: 120px;
+                height: 120px;
             }
             
             .content-section {
-                padding: 20px;
+                padding: 20px 15px;
+                margin: 10px 0;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+
+            .nav-tabs {
+                padding: 0 10px;
+            }
+
+            .tab-btn {
+                padding: 12px 20px;
+                font-size: 0.9em;
+            }
+
+            .skill-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .experience-item, .education-item {
+                padding: 20px 15px;
+            }
+
+            .experience-item:hover, .education-item:hover {
+                transform: translateX(5px);
+            }
+
+            body {
+                overflow-x: hidden;
+            }
+
+            .container {
+                padding: 10px;
             }
         }
     </style>
@@ -317,10 +368,18 @@
             <h2>Education</h2>
             <div class="education-item">
                 <h3>Bachelor of Science in Computer Science</h3>
-                <p class="date">2023-2026 | University of Technology</p>
+                <p class="date">2014 - 2018 | University of Technology</p>
                 <p>Graduated with honors. Focused on software engineering and web development.</p>
             </div>
-           
+            <div class="education-item">
+                <h3>Certifications</h3>
+                <p class="date">2018 - Present</p>
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li>AWS Certified Developer</li>
+                    <li>Google Cloud Professional</li>
+                    <li>Advanced React & Redux</li>
+                </ul>
+            </div>
         </div>
     </div>
 
